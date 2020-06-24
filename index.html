@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title> Portfolio </title>
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row navigation">
+                <a href="#" class="logo"> <img src="pictures/images.png" class="logo_img"> </a>
+                <nav class="top-nav">
+                    <a href="#" class="menu-icon" onclick="showSideMenu()"></a>
+                    <a href="#about" class="nav-item"> Обо мне </a>
+                   <!--  <a href="#home" class="nav-item"> Главная </a> -->
+                    <a href="#services" class="nav-item"> Мои преимущества </a>
+                    <a href="#our_works" class="nav-item"> Мои работы </a>
+                    <a href="#contacts" class="nav-item"> Контакты </a>
+                </nav>
+                <div id="side-menu" class="side-nav">
+                    <a href="#" class="close" onclick="hideSideMenu()">&times;</a>
+                    <a href="#about"> Обо мне </a>
+                   <!--  <a href="#home"> Главная </a> -->
+                    <a href="#services"> Мои преимущества </a>
+                    <a href="#our_works"> Мои работы </a>
+                    <a href="#contacts"> Контакты </a>
+                </div>
+                <script>
+                    function showSideMenu() {
+                        document.getElementById('side-menu').style.width = '250px';
+                    }
+                    function hideSideMenu() {
+                        document.getElementById('side-menu').style.width = '0';
+                    }
+                </script>
+            </div>
+        </div>
+    </header>
+
+    <section class="home_banner_area">
+        <div class="banner_inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="banner_content">
+                            <h3 class="text-uppercase">Привет</h3>
+                            <h1 class="text-uppercase"> Меня Эсен </h1>
+                            <h5 class="text-uppercase">Я фронтенд разработчик</h5>
+                            <div class="d-flex align-items-center">
+                                <a class="primary_btn" href="#"><span>Найми меня</span></a>
+                                <a class="primary_btn tr-bg" href="#"><span>Получить резюм</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="home_right_img">
+                            <img class="" src="img/banner/home-right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+   <!--  <div class="slider">
+        <div class="item">
+            <img src="pictures/kar2.jpg" alt="Первый слайд">
+            <div class="slideText"> <strong>КОМАНДА - КРУГ СВОИХ ЛЮДЕЙ, ИМЕЮЩИХ ОБЩУЮ ЦЕЛЬ.</strong> </div>
+        </div>
+
+        <div class="item">
+            <img src="pictures/ty.jpg" alt="Второй слайд">
+            <div class="slideText"><strong>СТИЛЬ КОМАНДЫ - ЭТО ДОВЕРИЕ И СОТРУДНИЧЕСТВО.</strong></div>
+        </div>
+
+        <div class="item">
+            <img src="pictures/job.jpg" alt="Третий слайд">
+            <div class="slideText"> <strong>"ОДИН ЗА ВСЕХ, ВСЕ ЗА ОДНОГО".</strong></div>
+        </div>
+
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
+    </div>
+ -->
+    <br>
+
+   <!--  <div class="slider-dots">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+    </div> -->
+
+    <script src="script.js" type="text/javascript"></script>
+
+    
+     <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./pictures/photo.jpg" class="about-img" alt="">
+                </div>
+                          
+                <div class="col-lg-7">
+                    <p class="about-description">
+                        <strong>Профессиональная разработка сайтов любой сложности. Подключение сайта к системе управления. Создание сайта «с нуля» и его дальнейшее сопровождение. PHP, SQL, Flash, MySQL, JavaScript, CSS, XML/XSL/XSLT, HTML/DHTML и др. Графические пакеты: Photoshop, Corel Draw. Готов развиваться и повышать свой профессиональный уровень в выбранном направлении.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> 
+   
+
+
+  
+   <!--  <section id="services">
+        <div class="container">
+            <div class="section-title"> Мои <span> преимущества </span></div>
+            <div class="row">
+
+                <div class="col-lg-4 services-box">
+                    <div class="services-icon-box"> 
+                        <i class="fas fa-coins"></i> 
+                    </div>
+                    <h4 class="services-title"> Доступные цены </h4>
+                    <p class="services-text"> 
+                        Я не арендую офис, работаем дистанционно. И Вам не нужно переплачивать лишние деньги за ненужные вам вещи.
+                    </p>
+                </div>
+                <div class="col-lg-4 services-box">
+                    <div class="services-icon-box"> 
+                        <i class="fab fa-internet-explorer"></i> 
+                    </div>
+                    <h4 class="services-title"> Качественные веб-сайты </h4>
+                    <p class="services-text">При разработке веб-сайтов учитываются функциональность и юзабилити.</p>
+                </div>
+                <div class="col-lg-4 services-box">
+                    <div class="services-icon-box"> 
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h4 class="services-title"> Короткие сроки </h4>
+                    <p class="services-text">Я не затягиваю создание на несколько месяцев, как крупные компании.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section> -->
+
+   <!-- <section id="our_works">
+    <div class="container">
+        <div class="section-title"> Мои <span> работы </span></div>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="./pictures/tre.png" alt=" "> 
+                  <h4> Веб-сайт </h4>
+            </div>
+            <div class="col-lg-4">
+                <img src="./pictures/fre.png" alt=" ">
+                  <h4> Онлайн-руководство </h4>
+            </div>
+            <div class="col-lg-4">
+                <img src="./pictures/how.png" alt=" ">
+                  <h4> Портфолио </h4>
+            </div>
+        </div>
+    </div>
+</section>
+ -->
+
+   <!--  <section id="contacts">
+        <div class="container">
+            <form>
+             <div class="row">
+                <div class="col-lg-6">
+                  <div class="section-title"> Оставьте свои <span> заявки </span></div> 
+              </div>
+              <div class="col-lg-6 right">
+                 <div class="form-group">
+                   <input type="text" class="form-control form-control-lg" placeholder="Ваше ИМЯ" name="">
+               </div>
+               <div class="form-group">
+                   <input type="email" class="form-control form-control-lg" placeholder="Email@email.com" name="email">
+               </div>
+               <div class="form-group">
+                   <textarea class="form-control form-control-lg">
+                   </textarea>
+               </div>
+               <input type="submit" class="btn btn-secondary btn-block" value="Отправить" name="">
+           </div>
+       </div>
+        -->
+      <!--  <div class="flex">
+                            <div class="flex-1">
+                                <div class="flex-2">
+                                    <a style="color: red" style="font-size: 20px"
+                                </a>Мой адрес:</div>
+                                <div class="flex-3">
+                                    г.Бишкек, ул.Ахунбаева 199
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex-2">Мой телефон:</div>
+                                <div class="flex-3">
+                                    <a style="color:yellow" href="tel:+996709602994">
+                                     +996 501 01 05 28</a><br/>
+                                   <a style="color:yellow" href="tel:+996220561357"> +996 220 56 13 57</a>
+                                </div>
+                            </div>
+   </form>
+</div>
+</section>     -->
+
+<a href="#" class="back-to-top"></a>
+
+</body>
+</html>
